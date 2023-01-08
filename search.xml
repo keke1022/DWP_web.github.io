@@ -4,7 +4,107 @@
   
     
     <entry>
-      <title>trip</title>
+      <title>Discussion</title>
+      <link href="/DWP_web.github.io/2023/01/08/discussion/"/>
+      <url>/DWP_web.github.io/2023/01/08/discussion/</url>
+      
+        <content type="html"><![CDATA[<h2 id="discussion"><a href="#discussion" class="headerlink" title="discussion"></a>discussion</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> discussion </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> discussion </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Result</title>
+      <link href="/DWP_web.github.io/2023/01/08/result/"/>
+      <url>/DWP_web.github.io/2023/01/08/result/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> result </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> result </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Methods</title>
+      <link href="/DWP_web.github.io/2023/01/08/methods/"/>
+      <url>/DWP_web.github.io/2023/01/08/methods/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Method"><a href="#Method" class="headerlink" title="Method:"></a>Method:</h2><ol><li><p>Simulation of three months<br> a) More infection cases and more severe cases everyday<br> b) Patients will only go to nearest fever clinics for help<br> c) Patients of severe cases will recover a few days after they go to see doctor</p></li><li><p>Evaluate whether supply and demand meets<br> Draw the curve of severe cases</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Methods </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Methods </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Abstract</title>
+      <link href="/DWP_web.github.io/2023/01/08/abstract/"/>
+      <url>/DWP_web.github.io/2023/01/08/abstract/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><p>Explore the rationality of the supply and demand of medical resources in fever clinic in Jinshan Street in Fuzhou.</p><h2 id="Description"><a href="#Description" class="headerlink" title="Description:"></a>Description:</h2><p>The covid-19 virus is getting serious at present. It is obvious that the medical resource could not meet with the increasing need. Therefore, we aim to explore how to distribute medical resource to ensure the health of the population in Jinshan Street to the greatest extent possible. In our project, medical resource is reflected in fever clinics. The overall health condition is evaluated by local severe cases.</p><h2 id="Data-needed"><a href="#Data-needed" class="headerlink" title="Data needed:"></a>Data needed:</h2><ol><li><p><input checked="" disabled="" type="checkbox"> Addresses of communities in Jinshan Street (✔ found in the official account)</p></li><li><p><input checked="" disabled="" type="checkbox"> Population of communities in Jinshan Street (✔ found in the official account)</p></li><li><p><input disabled="" type="checkbox"> Scale of fever clinics in Jinshan Street (How many people are served everyday) ❌</p><p> a) By field observation, count the number of clients per hour.<br> b) By phone inquiry<br> c) Ask government staff</p></li><li><p><input disabled="" type="checkbox"> Everyday virus infection ❌</p><p> a) Use infection curve in Shanghai to simulate infection in Jinshan Street.<br> b) Take into account the rate of severe cases in different communities.</p><blockquote><p>eg. 1% in normal community and 5% in community with more elderly people</p></blockquote><p> c) The rate of patients who recover from severe case</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Problems </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Problems </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Trip to Mount Wuyi</title>
       <link href="/DWP_web.github.io/2023/01/07/trip/"/>
       <url>/DWP_web.github.io/2023/01/07/trip/</url>
       
@@ -15,12 +115,16 @@
           
           <category> Entertainment </category>
           
+          <category> Story </category>
+          
       </categories>
       
       
         <tags>
             
             <tag> Trip </tag>
+            
+            <tag> Entertaining </tag>
             
         </tags>
       
