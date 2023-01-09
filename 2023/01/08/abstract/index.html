@@ -16,15 +16,15 @@
   <meta name="author" content="keke and lulu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="AbstractExplore the rationality of the supply and demand of medical resources in fever clinic in Jinshan Street in Fuzhou. Description:The covid-19 virus is getting serious at present. It is obvious t">
+    <meta name="description" content="Purpose Explore the rationality of the supply and demand of medical resources in fever clinic in Jinshan Street in Fuzhou and then determine the next location of a clinic. Description The covid-1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Abstract">
 <meta property="og:url" content="https://keke1022.github.io/DWP_web.github.io/2023/01/08/abstract/index.html">
 <meta property="og:site_name" content="DWP in Fuzhou">
-<meta property="og:description" content="AbstractExplore the rationality of the supply and demand of medical resources in fever clinic in Jinshan Street in Fuzhou. Description:The covid-19 virus is getting serious at present. It is obvious t">
+<meta property="og:description" content="Purpose Explore the rationality of the supply and demand of medical resources in fever clinic in Jinshan Street in Fuzhou and then determine the next location of a clinic. Description The covid-1">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-01-08T06:39:50.000Z">
-<meta property="article:modified_time" content="2023-01-08T06:51:43.229Z">
+<meta property="article:modified_time" content="2023-01-09T09:14:36.067Z">
 <meta property="article:author" content="keke and lulu">
 <meta property="article:tag" content="Problems">
 <meta name="twitter:card" content="summary_large_image">
@@ -82,7 +82,11 @@
 
 
   
-<meta name="generator" content="Hexo 5.4.2"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -220,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1k words
+          1.4k words
         
       </span>
     
@@ -231,7 +235,7 @@
         
         
         
-          9 mins
+          12 mins
         
       </span>
     
@@ -274,28 +278,57 @@
             
               <div class="markdown-body">
                 
-                <h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><p>Explore the rationality of the supply and demand of medical resources in fever clinic in Jinshan Street in Fuzhou.</p>
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description:"></a>Description:</h2><p>The covid-19 virus is getting serious at present. It is obvious that the medical resource could not meet with the increasing need. Therefore, we aim to explore how to distribute medical resource to ensure the health of the population in Jinshan Street to the greatest extent possible. In our project, medical resource is reflected in fever clinics. The overall health condition is evaluated by local severe cases.</p>
-<h2 id="Data-needed"><a href="#Data-needed" class="headerlink" title="Data needed:"></a>Data needed:</h2><ol>
-<li><p><input checked="" disabled="" type="checkbox"> 
-Addresses of communities in Jinshan Street (✔ found in the official account)</p>
-</li>
-<li><p><input checked="" disabled="" type="checkbox"> 
-Population of communities in Jinshan Street (✔ found in the official account)</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-Scale of fever clinics in Jinshan Street (How many people are served everyday) ❌</p>
-<p> a) By field observation, count the number of clients per hour.<br> b) By phone inquiry<br> c) Ask government staff</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-Everyday virus infection ❌</p>
-<p> a) Use infection curve in Shanghai to simulate infection in Jinshan Street.<br> b) Take into account the rate of severe cases in different communities.</p>
-<blockquote>
-<p>eg. 1% in normal community and 5% in community with more elderly people</p>
-</blockquote>
-<p> c) The rate of patients who recover from severe case</p>
-</li>
-</ol>
+                <h2 id="purpose">Purpose</h2>
+<p>Explore the rationality of the supply and demand of medical resources
+in fever clinic in Jinshan Street in Fuzhou and then determine the next
+location of a clinic.</p>
+<h2 id="description">Description</h2>
+<p>The covid-19 virus is getting serious at present. It is obvious that
+the medical resource could not meet with the increasing need. Therefore,
+we aim to explore how to distribute medical resource to ensure the
+health of the population in Jinshan Street to the greatest extent
+possible. In our project, medical resource is reflected in fever
+clinics. The overall health condition is evaluated by local severe
+cases.</p>
+<h2 id="data-needed">Data needed</h2>
+<ul>
+<li>Addresses of communities in Jinshan Street</li>
+<li>Population of communities in Jinshan Street</li>
+<li>Scale of fever clinics in Jinshan Street</li>
+</ul>
+<h2 id="steps">Steps</h2>
+<h3 id="part-i-supply-and-demand-evaluation">Part I: Supply and Demand
+Evaluation</h3>
+<ul>
+<li>Simulation of three months
+<ul>
+<li>Total infection cases follow the S-curve</li>
+<li>A certain percentage of infected patients are severely ill</li>
+<li>Patients of different communities will only go to a particular
+clinic</li>
+<li>Severe cases are considered to have recovered after they go to
+clinic</li>
+</ul></li>
+<li>Evaluate whether supply and demand meets
+<ul>
+<li>Draw the curve of severe cases</li>
+<li>The slower rate of increase, the lower peak value, the better supply
+and demand meets</li>
+</ul></li>
+</ul>
+<h3 id="part-ii-optimal-location-of-the-next-clinic">Part II: Optimal
+Location of the Next Clinic</h3>
+<ul>
+<li>Use a mathematical formula to determine the effectiveness of a new
+location. The lower the value is, the better the location will be. <span
+class="math display">\[
+Effectiveness=\sum_{i=0}^n w_0((x - x_0)^2 + (y - y_0)^2)
+\]</span></li>
+<li>Divide the map into grid and calculate the effectiveness for each
+cell</li>
+<li>Display the effectiveness in the form of heatmap, which will
+indicate the optimal location</li>
+</ul>
 
                 
               </div>
@@ -396,8 +429,8 @@ Everyday virus infection ❌</p>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/DWP_web.github.io/2023/01/07/trip/" title="Trip to Mount Wuyi">
-                        <span class="hidden-mobile">Trip to Mount Wuyi</span>
+                      <a href="/DWP_web.github.io/2023/01/07/trip/" title="Trip in Fujian">
+                        <span class="hidden-mobile">Trip in Fujian</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -454,6 +487,12 @@ Everyday virus infection ❌</p>
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -647,6 +686,49 @@ Everyday virus infection ❌</p>
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/DWP_web.github.io/js/local-search.js" ></script>
 
