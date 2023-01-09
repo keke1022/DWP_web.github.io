@@ -58,7 +58,7 @@
     <link href="/DWP_web.github.io/2023/01/08/methods/"/>
     <url>/DWP_web.github.io/2023/01/08/methods/</url>
     
-    <content type="html"><![CDATA[<h2 id="method">Method:</h2><ol type="1"><li>Simulation of three months<ol type="a"><li>More infection cases and more severe cases everyday</li><li>Patients will only go to nearest fever clinics for help</li><li>Patients of severe cases will recover a few days after they go tosee doctor</li></ol></li><li>Evaluate whether supply and demand meets Draw the curve of severecases</li></ol><p><div style="width:100%; height:350px;border:none;text-align:center"><pre><code class="hljs">    &lt;iframe allowtransparency=&quot;yes&quot; frameborder=&quot;0&quot; width=&quot;300&quot; height=&quot;300&quot; src=&quot;/html_fig/fig.html&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;</code></pre></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="method">Method:</h2><ol type="1"><li>Simulation of three months<ol type="a"><li>More infection cases and more severe cases everyday</li><li>Patients will only go to nearest fever clinics for help</li><li>Patients of severe cases will recover a few days after they go tosee doctor</li></ol></li><li>Evaluate whether supply and demand meets Draw the curve of severecases</li></ol><iframe allowtransparency="yes" frameborder="0" width="600" height="600" src="/html_fig/fig.html"></iframe>]]></content>
     
     
     <categories>
