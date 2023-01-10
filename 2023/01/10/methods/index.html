@@ -25,7 +25,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://s2.loli.net/2023/01/10/dwXf13Aobps2Fua.jpg">
 <meta property="article:published_time" content="2023-01-10T06:50:58.000Z">
-<meta property="article:modified_time" content="2023-01-10T15:09:53.940Z">
+<meta property="article:modified_time" content="2023-01-10T16:41:17.753Z">
 <meta property="article:author" content="keke and lulu">
 <meta property="article:tag" content="Methods">
 <meta name="twitter:card" content="summary_large_image">
@@ -226,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.6k words
+          2.4k words
         
       </span>
     
@@ -237,7 +237,7 @@
         
         
         
-          14 mins
+          20 mins
         
       </span>
     
@@ -315,6 +315,8 @@ Model | databentobox</a></li>
     Susceptible \rightarrow Exposed \rightarrow Infected \rightarrow
 Recovered
 \]</span></p>
+<p>We extract five important functions from the essay above. Four groups
+of people are represented by their capital alphabets.</p>
 <p><span class="math display">\[
     \frac{dE}{dt} = -\beta \frac{SI}{N}
 \]</span></p>
@@ -330,6 +332,89 @@ Recovered
 <p><span class="math display">\[
     N = S + E + I + R
 \]</span></p>
+<table style="width:100%;">
+
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">Representation</th>
+<th style="text-align: center;">Value</th>
+<th style="text-align: center;">known or not</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(\beta\)</span></td>
+<td style="text-align: center;">the transition rate between Susceptible
+and Exposed</td>
+<td style="text-align: center;">0.75</td>
+<td style="text-align: center;">not known</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span
+class="math inline">\(\gamma\)</span></td>
+<td style="text-align: center;">the transition rate between Exposed and
+Infected</td>
+<td style="text-align: center;">0.3</td>
+<td style="text-align: center;">not known</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(\sigma\)</span></td>
+<td style="text-align: center;">the transition rate between Infected and
+Recovered/Removed</td>
+<td style="text-align: center;">0.2</td>
+<td style="text-align: center;">not known</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Origin-Destination (OD) matrix</td>
+<td style="text-align: center;">the flow of population within the
+region</td>
+<td style="text-align: center;">with respect to different
+communities</td>
+<td style="text-align: center;">not known</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span
+class="math inline">\(N\)</span></td>
+<td style="text-align: center;">the overall population</td>
+<td style="text-align: center;">with respect to different
+communities</td>
+<td style="text-align: center;">known</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">name</th>
+<th style="text-align: center;">population</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">金洲社区卫生服务站</td>
+<td style="text-align: center;">43750</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">丽景社区卫生服务站</td>
+<td style="text-align: center;">70081</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">中天社区卫生服务站</td>
+<td style="text-align: center;">56015</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">水都社区卫生服务站</td>
+<td style="text-align: center;">68615</td>
+</tr>
+</tbody>
+</table>
+<p><strong><span class="math inline">\(\beta\)</span>, <span
+class="math inline">\(\gamma\)</span>, <span
+class="math inline">\(\sigma\)</span>, and OD-matrix can be altered
+according to communities. Here the OD-matrix is randomized.</strong></p>
 <h3 id="evaluate-whether-supply-and-demand-meets">2. Evaluate whether
 supply and demand meets</h3>
 <ul>
@@ -344,22 +429,24 @@ id="decide-the-location-of-the-fifth-clinic-based-on-current-simulation">3.
 Decide the location of the fifth clinic based on current simulation</h3>
 <ul>
 <li><p>Use a mathematical formula to determine the effectiveness of a
-new location. The lower the value is, the better the location will
-be.<br></p>
+new location. Here we name the "effectiveness" as cost, because the
+lower its value is, the better the location will be.<br></p>
 <ul>
-<li><span class="math inline">\(Effectiveness=\sum_{i=0}^n w_0((x -
-x_0)^2 + (y - y_0)^2)\)</span></li>
+<li><span class="math inline">\(Cost=\sum_{i=0}^n w_0((x - x_0)^2 + (y -
+y_0)^2)\)</span></li>
 </ul></li>
-<li><p>Divide the map into grid and calculate the effectiveness for each
-cell</p></li>
-<li><p>Display the effectiveness in the form of heatmap, which will
-indicate the optimal location</p></li>
+<li><p>Divide the map into grid and calculate the cost for each
+cell.</p></li>
+<li><p>Display the values of the cost in the form of heatmap, which will
+indicate the optimal location.</p></li>
 </ul>
 <figure>
 <img src="https://s2.loli.net/2023/01/10/dwXf13Aobps2Fua.jpg" srcset="/img/loading.gif" lazyload
 alt="Heatmap" />
 <figcaption aria-hidden="true">Heatmap</figcaption>
 </figure>
+<p>We use SEIR model to simulate the outbreak of four regions. The
+number of infected people is shown in the animation below.</p>
 <iframe src="../../../../htmlfig/fig.html" height="500px" width="100%" scrolling="auto" frameborder="0" style="box-shadow: 0px 0px 20px -10px #888;">
 </iframe>
 
