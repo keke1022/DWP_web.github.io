@@ -16,18 +16,20 @@
   <meta name="author" content="keke and lulu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Method:  Simulation of three months  More infection cases and more severe cases everyday Patients will only go to nearest fever clinics for help Patients of severe cases will recover a few days">
+    <meta name="description" content="Method 1. Simulation of coronavirus outbreak: SEIR model (sample code + pic)   The population can be divided into four compartments:  Susceptible (those who can catch the disease) Exposed (tho">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Methods">
 <meta property="og:url" content="https://keke1022.fun/2023/01/08/methods/index.html">
 <meta property="og:site_name" content="DWP in Fuzhou">
-<meta property="og:description" content="Method:  Simulation of three months  More infection cases and more severe cases everyday Patients will only go to nearest fever clinics for help Patients of severe cases will recover a few days">
+<meta property="og:description" content="Method 1. Simulation of coronavirus outbreak: SEIR model (sample code + pic)   The population can be divided into four compartments:  Susceptible (those who can catch the disease) Exposed (tho">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://s2.loli.net/2023/01/10/dwXf13Aobps2Fua.jpg">
 <meta property="article:published_time" content="2023-01-08T06:50:58.000Z">
-<meta property="article:modified_time" content="2023-01-10T03:52:46.202Z">
+<meta property="article:modified_time" content="2023-01-10T08:58:13.805Z">
 <meta property="article:author" content="keke and lulu">
 <meta property="article:tag" content="Methods">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://s2.loli.net/2023/01/10/dwXf13Aobps2Fua.jpg">
   
   
   
@@ -224,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          242 words
+          1.6k words
         
       </span>
     
@@ -235,7 +237,7 @@
         
         
         
-          3 mins
+          14 mins
         
       </span>
     
@@ -278,18 +280,86 @@
             
               <div class="markdown-body">
                 
-                <h2 id="method">Method:</h2>
-<ol type="1">
-<li>Simulation of three months
-<ol type="a">
-<li>More infection cases and more severe cases everyday</li>
-<li>Patients will only go to nearest fever clinics for help</li>
-<li>Patients of severe cases will recover a few days after they go to
-see doctor</li>
-</ol></li>
-<li>Evaluate whether supply and demand meets Draw the curve of severe
-cases</li>
-</ol>
+                <h2 id="method">Method</h2>
+<h3
+id="simulation-of-coronavirus-outbreak-seir-model-sample-code-pic">1.
+Simulation of coronavirus outbreak: SEIR model (sample code + pic)
+<br></h3>
+<ul>
+<li>The population can be divided into four compartments:
+<ul>
+<li><p>Susceptible (those who can catch the disease)<br></p></li>
+<li><p>Exposed (those who are exposed to the disease but don’t have
+symptoms yet)</p></li>
+<li><p>Infected (those who show symptoms and are infective)</p></li>
+<li><p>Recovered (those who have recovered and become immune).</p></li>
+</ul></li>
+<li>The model takes into account following factors, which is reflected
+in initially set parameters.
+<ul>
+<li><p>the transition rate between Susceptible and Exposed<br></p></li>
+<li><p>the transition rate between Infected and Recovered</p></li>
+<li><p>an incubation period, during which those who are exposed are not
+infective</p></li>
+<li><p>outbreak starts from an initial 10 infected cases</p></li>
+<li><p>the pattern of movement between zones within the region in a
+typical day. <br></p></li>
+</ul></li>
+<li>The relationship between Susceptible, Exposed, Infected, Recovered
+is reflected in differential equations. More details can be seen on <a
+target="_blank" rel="noopener" href="https://www.databentobox.com/2020/03/28/covid19_city_sim_seir/">Simulating
+Coronavirus Outbreak in Cities with Origin-Destination Matrix and SEIR
+Model | databentobox</a></li>
+</ul>
+<p><span class="math display">\[
+    Susceptible \rightarrow Exposed \rightarrow Infected \rightarrow
+Recovered
+\]</span></p>
+<p><span class="math display">\[
+    \frac{dE}{dt} = -\beta \frac{SI}{N}
+\]</span></p>
+<p><span class="math display">\[
+    \frac{dE}{dt} = \beta \frac{SI}{N} - \sigma E
+\]</span></p>
+<p><span class="math display">\[
+    \frac{dI}{dt} = \sigma E - \gamma I
+\]</span></p>
+<p><span class="math display">\[
+    \frac{dR}{dt} = \gamma I
+\]</span></p>
+<p><span class="math display">\[
+    N = S + E + I + R
+\]</span></p>
+<h3 id="evaluate-whether-supply-and-demand-meets">2. Evaluate whether
+supply and demand meets</h3>
+<ul>
+<li>Draw the curve of infected cases with in the region. The seriousness
+is defined as the peak value divided by the time of reaching the
+peak.</li>
+</ul>
+<iframe src="../../../../htmlfig/infected.html" height="400px" width="100%" scrolling="auto" frameborder="0" style="box-shadow: 0px 0px 20px -10px #888;">
+</iframe>
+<h3
+id="decide-the-location-of-the-fifth-clinic-based-on-current-simulation">3.
+Decide the location of the fifth clinic based on current simulation</h3>
+<ul>
+<li><p>Use a mathematical formula to determine the effectiveness of a
+new location. The lower the value is, the better the location will
+be.<br></p>
+<ul>
+<li><span class="math inline">\(Effectiveness=\sum_{i=0}^n w_0((x -
+x_0)^2 + (y - y_0)^2)\)</span></li>
+</ul></li>
+<li><p>Divide the map into grid and calculate the effectiveness for each
+cell</p></li>
+<li><p>Display the effectiveness in the form of heatmap, which will
+indicate the optimal location</p></li>
+</ul>
+<figure>
+<img src="https://s2.loli.net/2023/01/10/dwXf13Aobps2Fua.jpg" srcset="/img/loading.gif" lazyload
+alt="Heatmap" />
+<figcaption aria-hidden="true">Heatmap</figcaption>
+</figure>
 <iframe src="../../../../htmlfig/fig.html" height="500px" width="100%" scrolling="auto" frameborder="0" style="box-shadow: 0px 0px 20px -10px #888;">
 </iframe>
 
@@ -450,6 +520,12 @@ cases</li>
 
 
   
+
+
+  
+  
+
+
 
 
 
@@ -643,6 +719,49 @@ cases</li>
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
