@@ -8,7 +8,7 @@
     <link href="/DWP_web.github.io/2023/01/08/discussion/"/>
     <url>/DWP_web.github.io/2023/01/08/discussion/</url>
     
-    <content type="html"><![CDATA[<h2 id="discussion">discussion</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="discussion">Discussion</h2><ol type="1"><li>Simulation:</li></ol><p>Due to a lack of data, many assumptions are made, which may not beconsistent with the real situation here. This will cause errors.However, those missing information can be acquired somehow for bettersimulation.</p><h4 id="assumptions">Assumptions:</h4><ul><li>The pattern of movement between zones within the region in a typicalday is randomized<ul><li>Solution: the exchange of population between zones can be obtainedby phone data like public transportation usage</li></ul></li><li>The transition rate between Infected and Recovered is the same forall regions<ul><li>Solution: count the average recovering time for each region, whichis related to population structure and clinics scale, etc.</li></ul></li></ul><ol start="2" type="1"><li>Evaluate Supply and Demand relation</li></ol><p>Currently, we use the formula peak value for infected cases dividedby the time to peak to reflect the seriousness of outbreak in a region.However, we should also take into account factors such as the proportionof severe disease and the extent of economic damage. For example,communities with a large proportion of elderly people should be givenpriority.</p><ol start="3" type="1"><li>Select the location for the fifth clinic</li></ol><p>We design the effectiveness of a new location as a formula. <spanclass="math inline">\(cost=\sum_{i=0}^n w_0((x - x_0)^2 + (y -y_0)^2)\)</span> <span class="math inline">\(w_0\)</span> reflects theseriousness of the outbreak in the community. For the convenience, theclinic should be built nearer to area with serious situation. We aim tominimize the cost value in order to select the optimal location. Thereis still some room for improvement. - We divide the Jinshan Street into<span class="math inline">\(n=21\)</span> communities, and treat them asa point with correspoinding population for the sake of convenience.However, a community consists of many residential quarters, and eachresidential quarter has many buildings. This method can be optimizedgiven real population data of Jinshan Street. In this way, we couldtreat people in the same building as a whole and build more complex butaccurate models - The distance between the new clinic and communitiesare all straight-line distance. However, we should consider publictransport development and road condition. For future research, we maytake advantage of map software to calculate the real distance.</p>]]></content>
     
     
     <categories>
@@ -33,7 +33,7 @@
     <link href="/DWP_web.github.io/2023/01/08/result/"/>
     <url>/DWP_web.github.io/2023/01/08/result/</url>
     
-    <content type="html"><![CDATA[<h2 id="result">Result</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="result">Result</h2><h3 id="part-i-supply-and-demand-evaluation">Part I: Supply and DemandEvaluation</h3>]]></content>
     
     
     <categories>
@@ -58,7 +58,7 @@
     <link href="/DWP_web.github.io/2023/01/08/methods/"/>
     <url>/DWP_web.github.io/2023/01/08/methods/</url>
     
-    <content type="html"><![CDATA[<h2 id="method">Method:</h2><ol type="1"><li>Simulation of three months<ol type="a"><li>More infection cases and more severe cases everyday</li><li>Patients will only go to nearest fever clinics for help</li><li>Patients of severe cases will recover a few days after they go tosee doctor</li></ol></li><li>Evaluate whether supply and demand meets Draw the curve of severecases</li></ol><iframe src="../../../../htmlfig/fig.html" height="300px" width="100%" scrolling="auto" frameborder="0" style="box-shadow: 0px 0px 20px -10px #888;"></iframe>]]></content>
+    <content type="html"><![CDATA[<h2 id="method">Method:</h2><ol type="1"><li>Simulation of three months<ol type="a"><li>More infection cases and more severe cases everyday</li><li>Patients will only go to nearest fever clinics for help</li><li>Patients of severe cases will recover a few days after they go tosee doctor</li></ol></li><li>Evaluate whether supply and demand meets Draw the curve of severecases</li></ol><iframe src="../../../../htmlfig/fig.html" height="500px" width="100%" scrolling="auto" frameborder="0" style="box-shadow: 0px 0px 20px -10px #888;"></iframe>]]></content>
     
     
     <categories>
