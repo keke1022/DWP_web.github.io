@@ -16,24 +16,21 @@
   <meta name="author" content="keke and lulu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Method 1. Simulation of coronavirus outbreak: SEIR model (sample code + pic)   The population can be divided into four compartments:  Susceptible (those who can catch the disease) Exposed (tho">
+    <meta name="description" content="DWP Homework 3 author: Cai Xinlei Requirements Figure 1: (choose one from the following)  Grouped bar chart. Overlaid histogram. Scatter plot with labels or sizes or colors for each point. Li">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Methods">
-<meta property="og:url" content="https://keke1022.fun/2023/01/10/methods/index.html">
+<meta property="og:title" content="Caixinlei&#39;s Homework 3">
+<meta property="og:url" content="https://keke1022.fun/2023/01/12/Homework-3/index.html">
 <meta property="og:site_name" content="DWP in Fuzhou">
-<meta property="og:description" content="Method 1. Simulation of coronavirus outbreak: SEIR model (sample code + pic)   The population can be divided into four compartments:  Susceptible (those who can catch the disease) Exposed (tho">
+<meta property="og:description" content="DWP Homework 3 author: Cai Xinlei Requirements Figure 1: (choose one from the following)  Grouped bar chart. Overlaid histogram. Scatter plot with labels or sizes or colors for each point. Li">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://s2.loli.net/2023/01/10/dwXf13Aobps2Fua.jpg">
-<meta property="article:published_time" content="2023-01-10T06:50:58.000Z">
-<meta property="article:modified_time" content="2023-01-12T12:27:05.505Z">
+<meta property="article:published_time" content="2023-01-12T11:35:38.000Z">
+<meta property="article:modified_time" content="2023-01-12T12:38:02.603Z">
 <meta property="article:author" content="keke and lulu">
-<meta property="article:tag" content="Methods">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://s2.loli.net/2023/01/10/dwXf13Aobps2Fua.jpg">
   
   
   
-  <title>Methods - DWP in Fuzhou</title>
+  <title>Caixinlei&#39;s Homework 3 - DWP in Fuzhou</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +200,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Methods"></span>
+            <span id="subtitle" data-typed-text="Caixinlei&#39;s Homework 3"></span>
           
         </div>
 
@@ -214,8 +211,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-10 14:50" pubdate>
-          January 10, 2023 pm
+        <time datetime="2023-01-12 19:35" pubdate>
+          January 12, 2023 pm
         </time>
       </span>
     
@@ -226,7 +223,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.4k words
+          203 words
         
       </span>
     
@@ -237,7 +234,7 @@
         
         
         
-          20 mins
+          2 mins
         
       </span>
     
@@ -275,179 +272,30 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Methods</h1>
+            <h1 style="display: none">Caixinlei&#39;s Homework 3</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="method">Method</h2>
-<h3
-id="simulation-of-coronavirus-outbreak-seir-model-sample-code-pic">1.
-Simulation of coronavirus outbreak: SEIR model (sample code + pic)
-<br></h3>
+                <h1 id="dwp-homework-3">DWP Homework 3</h1>
+<p>author: Cai Xinlei</p>
+<h2 id="requirements">Requirements</h2>
+<h3 id="figure-1-choose-one-from-the-following">Figure 1: (choose one
+from the following)</h3>
 <ul>
-<li>The population can be divided into four compartments:
-<ul>
-<li><p>Susceptible (those who can catch the disease)<br></p></li>
-<li><p>Exposed (those who are exposed to the disease but don’t have
-symptoms yet)</p></li>
-<li><p>Infected (those who show symptoms and are infective)</p></li>
-<li><p>Recovered (those who have recovered and become immune).</p></li>
-</ul></li>
-<li>The model takes into account following factors, which is reflected
-in initially set parameters.
-<ul>
-<li><p>the transition rate between Susceptible and Exposed<br></p></li>
-<li><p>the transition rate between Infected and Recovered</p></li>
-<li><p>an incubation period, during which those who are exposed are not
-infective</p></li>
-<li><p>outbreak starts from an initial 10 infected cases</p></li>
-<li><p>the pattern of movement between zones within the region in a
-typical day. <br></p></li>
-</ul></li>
-<li>The relationship between Susceptible, Exposed, Infected, Recovered
-is reflected in differential equations. More details can be seen on <a
-target="_blank" rel="noopener" href="https://www.databentobox.com/2020/03/28/covid19_city_sim_seir/">Simulating
-Coronavirus Outbreak in Cities with Origin-Destination Matrix and SEIR
-Model | databentobox</a></li>
+<li>Grouped bar chart.</li>
+<li>Overlaid histogram.</li>
+<li>Scatter plot with labels or sizes or colors for each point.</li>
+<li>Line plot with multiple lines.</li>
 </ul>
-<p><span class="math display">\[
-    Susceptible \rightarrow Exposed \rightarrow Infected \rightarrow
-Recovered
-\]</span></p>
-<p>We extract five important functions from the essay above. Four groups
-of people are represented by their capital alphabets.</p>
-<p><span class="math display">\[
-    \frac{dE}{dt} = -\beta \frac{SI}{N}
-\]</span></p>
-<p><span class="math display">\[
-    \frac{dE}{dt} = \beta \frac{SI}{N} - \sigma E
-\]</span></p>
-<p><span class="math display">\[
-    \frac{dI}{dt} = \sigma E - \gamma I
-\]</span></p>
-<p><span class="math display">\[
-    \frac{dR}{dt} = \gamma I
-\]</span></p>
-<p><span class="math display">\[
-    N = S + E + I + R
-\]</span></p>
-<table style="width:100%;">
-
-<thead>
-<tr class="header">
-<th style="text-align: center;"></th>
-<th style="text-align: center;">Representation</th>
-<th style="text-align: center;">Value</th>
-<th style="text-align: center;">known or not</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><span
-class="math inline">\(\beta\)</span></td>
-<td style="text-align: center;">the transition rate between Susceptible
-and Exposed</td>
-<td style="text-align: center;">0.75</td>
-<td style="text-align: center;">not known</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><span
-class="math inline">\(\gamma\)</span></td>
-<td style="text-align: center;">the transition rate between Exposed and
-Infected</td>
-<td style="text-align: center;">0.3</td>
-<td style="text-align: center;">not known</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><span
-class="math inline">\(\sigma\)</span></td>
-<td style="text-align: center;">the transition rate between Infected and
-Recovered/Removed</td>
-<td style="text-align: center;">0.2</td>
-<td style="text-align: center;">not known</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Origin-Destination (OD) matrix</td>
-<td style="text-align: center;">the flow of population within the
-region</td>
-<td style="text-align: center;">with respect to different
-communities</td>
-<td style="text-align: center;">not known</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;"><span
-class="math inline">\(N\)</span></td>
-<td style="text-align: center;">the overall population</td>
-<td style="text-align: center;">with respect to different
-communities</td>
-<td style="text-align: center;">known</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;">name</th>
-<th style="text-align: center;">population</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">金洲社区卫生服务站</td>
-<td style="text-align: center;">43750</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">丽景社区卫生服务站</td>
-<td style="text-align: center;">70081</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">中天社区卫生服务站</td>
-<td style="text-align: center;">56015</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">水都社区卫生服务站</td>
-<td style="text-align: center;">68615</td>
-</tr>
-</tbody>
-</table>
-<p><strong><span class="math inline">\(\beta\)</span>, <span
-class="math inline">\(\gamma\)</span>, <span
-class="math inline">\(\sigma\)</span>, and OD-matrix can be altered
-according to communities. Here the OD-matrix is randomized.</strong></p>
-<h3 id="evaluate-whether-supply-and-demand-meets">2. Evaluate whether
-supply and demand meets</h3>
+<h3 id="figure-2">Figure 2:</h3>
 <ul>
-<li>Draw the curve of infected cases with in the region. The seriousness
-is defined as the peak value divided by the time of reaching the
-peak.</li>
+<li>maps</li>
 </ul>
-<iframe src="../../../../htmlfig/DWP/infected.html" height="400px" width="100%" scrolling="auto" frameborder="0" style="box-shadow: 0px 0px 20px -10px #888;">
+<h2 id="display">Display</h2>
+<iframe src="../../../../htmlfig/DWP/inf_case.html" height="500px" width="100%" scrolling="auto" frameborder="0" style="box-shadow: 0px 0px 20px -10px #888;">
 </iframe>
-<h3
-id="decide-the-location-of-the-fifth-clinic-based-on-current-simulation">3.
-Decide the location of the fifth clinic based on current simulation</h3>
-<ul>
-<li><p>Use a mathematical formula to determine the effectiveness of a
-new location. Here we name the "effectiveness" as cost, because the
-lower its value is, the better the location will be.<br></p>
-<ul>
-<li><span class="math inline">\(Cost=\sum_{i=0}^n w_0((x - x_0)^2 + (y -
-y_0)^2)\)</span></li>
-</ul></li>
-<li><p>Divide the map into grid and calculate the cost for each
-cell.</p></li>
-<li><p>Display the values of the cost in the form of heatmap, which will
-indicate the optimal location.</p></li>
-</ul>
-<figure>
-<img src="https://s2.loli.net/2023/01/10/dwXf13Aobps2Fua.jpg" srcset="/img/loading.gif" lazyload
-alt="Heatmap" />
-<figcaption aria-hidden="true">Heatmap</figcaption>
-</figure>
-<p>We use SEIR model to simulate the outbreak of four regions. The
-number of infected people is shown in the animation below.</p>
-<iframe src="../../../../htmlfig/DWP/fig.html" height="500px" width="100%" scrolling="auto" frameborder="0" style="box-shadow: 0px 0px 20px -10px #888;">
+<iframe src="../../../../htmlfig/DWP/world_map.html" height="500px" width="100%" scrolling="auto" frameborder="0" style="box-shadow: 0px 0px 20px -10px #888;">
 </iframe>
 
                 
@@ -467,7 +315,7 @@ number of infected people is shown in the animation below.</p>
     
       <span class="category-chain">
         
-  <a href="/categories/Methods/" class="category-chain-item">Methods</a>
+  <a href="/categories/Course-Work/" class="category-chain-item">Course Work</a>
   
   
 
@@ -479,13 +327,6 @@ number of infected people is shown in the animation below.</p>
     </div>
   
   
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="/tags/Methods/">#Methods</a>
-      
-    </div>
-  
 </div>
 
 
@@ -494,8 +335,8 @@ number of infected people is shown in the animation below.</p>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Methods</div>
-      <div>https://keke1022.fun/2023/01/10/methods/</div>
+      <div>Caixinlei&#39;s Homework 3</div>
+      <div>https://keke1022.fun/2023/01/12/Homework-3/</div>
     </div>
     <div class="license-meta">
       
@@ -507,7 +348,7 @@ number of infected people is shown in the animation below.</p>
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>January 10, 2023</div>
+          <div>January 12, 2023</div>
         </div>
       
       
@@ -539,9 +380,9 @@ number of infected people is shown in the animation below.</p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/10/abstract/" title="Abstract">
+                      <a href="/2023/01/12/Homework-3-1/" title="Liubeijie&#39;s Homework 3">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Abstract</span>
+                        <span class="hidden-mobile">Liubeijie&#39;s Homework 3</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -549,8 +390,8 @@ number of infected people is shown in the animation below.</p>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/09/result/" title="Result">
-                        <span class="hidden-mobile">Result</span>
+                      <a href="/2023/01/10/abstract/" title="Abstract">
+                        <span class="hidden-mobile">Abstract</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -638,12 +479,6 @@ number of infected people is shown in the animation below.</p>
 
 
   
-
-
-  
-  
-
-
 
 
 
@@ -837,49 +672,6 @@ number of infected people is shown in the animation below.</p>
 
 
   <script>Fluid.plugins.imageCaption();</script>
-
-  
-      <script>
-        if (!window.MathJax) {
-          window.MathJax = {
-            tex    : {
-              inlineMath: { '[+]': [['$', '$']] }
-            },
-            loader : {
-              load: ['ui/lazy']
-            },
-            options: {
-              renderActions: {
-                insertedScript: [200, () => {
-                  document.querySelectorAll('mjx-container').forEach(node => {
-                    let target = node.parentNode;
-                    if (target.nodeName.toLowerCase() === 'li') {
-                      target.parentNode.classList.add('has-jax');
-                    }
-                  });
-                }, '', false]
-              }
-            }
-          };
-        } else {
-          MathJax.startup.document.state(0);
-          MathJax.texReset();
-          MathJax.typeset();
-          MathJax.typesetPromise();
-        }
-
-        Fluid.events.registerRefreshCallback(function() {
-          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
-            MathJax.startup.document.state(0);
-            MathJax.texReset();
-            MathJax.typeset();
-            MathJax.typesetPromise();
-          }
-        });
-      </script>
-    
-
-  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
