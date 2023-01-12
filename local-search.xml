@@ -13,10 +13,18 @@
     
     <categories>
       
+      <category>DWP</category>
+      
       <category>Course Work</category>
       
     </categories>
     
+    
+    <tags>
+      
+      <tag>DWP</tag>
+      
+    </tags>
     
   </entry>
   
@@ -32,10 +40,18 @@
     
     <categories>
       
+      <category>DWP</category>
+      
       <category>Course Work</category>
       
     </categories>
     
+    
+    <tags>
+      
+      <tag>DWP</tag>
+      
+    </tags>
     
   </entry>
   
@@ -51,6 +67,8 @@
     
     <categories>
       
+      <category>DWP</category>
+      
       <category>Problems</category>
       
     </categories>
@@ -58,7 +76,7 @@
     
     <tags>
       
-      <tag>Problems</tag>
+      <tag>DWP</tag>
       
     </tags>
     
@@ -76,6 +94,8 @@
     
     <categories>
       
+      <category>DWP</category>
+      
       <category>Methods</category>
       
     </categories>
@@ -83,7 +103,7 @@
     
     <tags>
       
-      <tag>Methods</tag>
+      <tag>DWP</tag>
       
     </tags>
     
@@ -101,6 +121,8 @@
     
     <categories>
       
+      <category>DWP</category>
+      
       <category>Result</category>
       
     </categories>
@@ -108,7 +130,7 @@
     
     <tags>
       
-      <tag>Result</tag>
+      <tag>DWP</tag>
       
     </tags>
     
@@ -126,6 +148,8 @@
     
     <categories>
       
+      <category>DWP</category>
+      
       <category>Discussion</category>
       
     </categories>
@@ -133,7 +157,7 @@
     
     <tags>
       
-      <tag>Discussion</tag>
+      <tag>DWP</tag>
       
     </tags>
     
@@ -158,9 +182,9 @@
     
     <tags>
       
-      <tag>Trip</tag>
+      <tag>DWP</tag>
       
-      <tag>Entertaining</tag>
+      <tag>Trip</tag>
       
     </tags>
     
